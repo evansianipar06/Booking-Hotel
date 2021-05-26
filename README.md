@@ -1,5 +1,5 @@
 # Booking-Hotel-SOA-Project-Web-Services
-This is one of the projects in the Distributed Application Development course which applies SOA concepts to applications.
+This is one of the projects in the Distributed Application Development course that applies SOA concepts to application.
 
 ### How to use :
 
@@ -8,7 +8,7 @@ This is one of the projects in the Distributed Application Development course wh
 - Deploying Projects (BookingHotel and Client_BookingHotel) on GlassFish Server
 - On the BookingHotel project, open the Publisher package and Run the MyServer file for the publisher endpoint
 - Run the index.jsp file to launch the application
-- End.
+- Done.
 
 ### Connect with me:
 
