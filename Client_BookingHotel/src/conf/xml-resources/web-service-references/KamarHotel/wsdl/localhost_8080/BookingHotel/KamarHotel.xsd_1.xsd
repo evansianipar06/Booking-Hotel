@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebService/">
+
+<xs:element name="addBooking" type="tns:addBooking"/>
+
+<xs:element name="addBookingResponse" type="tns:addBookingResponse"/>
+
+<xs:element name="delBooking" type="tns:delBooking"/>
+
+<xs:element name="delBookingResponse" type="tns:delBookingResponse"/>
+
+<xs:element name="editBooking" type="tns:editBooking"/>
+
+<xs:element name="editBookingResponse" type="tns:editBookingResponse"/>
+
+<xs:element name="getKamarHotel" type="tns:getKamarHotel"/>
+
+<xs:element name="getKamarHotelResponse" type="tns:getKamarHotelResponse"/>
+
+<xs:element name="tampilBooking" type="tns:tampilBooking"/>
+
+<xs:element name="tampilBookingResponse" type="tns:tampilBookingResponse"/>
+
+<xs:complexType name="editBooking">
+<xs:sequence>
+<xs:element name="kode" type="xs:int"/>
+<xs:element name="jenisKamar" type="xs:string" minOccurs="0"/>
+<xs:element name="harga" type="xs:string" minOccurs="0"/>
+<xs:element name="namaCustomer" type="xs:string" minOccurs="0"/>
+<xs:element name="tglCheckIn" type="xs:string" minOccurs="0"/>
+<xs:element name="tglCheckOut" type="xs:string" minOccurs="0"/>
+<xs:element name="noHp" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="alamat" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editBookingResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="delBooking">
+<xs:sequence>
+<xs:element name="kode" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delBookingResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="addBooking">
+<xs:sequence>
+<xs:element name="kode" type="xs:int"/>
+<xs:element name="jenisKamar" type="xs:string" minOccurs="0"/>
+<xs:element name="harga" type="xs:string" minOccurs="0"/>
+<xs:element name="namaCustomer" type="xs:string" minOccurs="0"/>
+<xs:element name="tglCheckIn" type="xs:string" minOccurs="0"/>
+<xs:element name="tglCheckOut" type="xs:string" minOccurs="0"/>
+<xs:element name="noHp" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="alamat" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addBookingResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getKamarHotel">
+<xs:sequence>
+<xs:element name="kode" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getKamarHotelResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tampilBooking">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilBookingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
